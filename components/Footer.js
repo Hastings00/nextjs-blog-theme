@@ -1,4 +1,6 @@
-const sunIcon = (
+import React from 'react';
+
+const flaskIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="25"
@@ -28,7 +30,7 @@ const sunIcon = (
   </svg>
 );
 
-const moonIcon = (
+const calculatorIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="21"
@@ -59,7 +61,7 @@ const ThemeSwitcher = () => {
         }}
         className="flex items-center h-full pr-2 dark:bg-primary rounded-3xl flex justify-center align-center p-2 w-24 h-10 transition"
       >
-        {moonIcon}
+        {flaskIcon}
       </button>
 
       <button
@@ -71,13 +73,13 @@ const ThemeSwitcher = () => {
         }}
         className="flex items-center h-full pr-2 bg-primary dark:bg-transparent rounded-3xl flex justify-center align-center p-2 w-24 h-10 transition"
       >
-        {sunIcon}
+        {calculatorIcon}
       </button>
     </div>
   );
 };
 
-export default function Footer({ copyrightText }) {
+const Footer = ({ copyrightText }) => {
   return (
     <footer className="py-16 flex flex-col items-center">
       <p className="dark:text-white uppercase mb-3 font-bold opacity-60">
@@ -86,4 +88,6 @@ export default function Footer({ copyrightText }) {
       <ThemeSwitcher />
     </footer>
   );
-}
+};
+
+export default Footer;
