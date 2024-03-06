@@ -1,17 +1,46 @@
+/* Rebranded styles with additional adjustments */
+
+/* Tailwind CSS imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
 
+/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: 'Roboto', sans-serif; /* Updated primary font */
+  color: #333; /* Updated heading color */
+  margin-bottom: 1rem; /* Add spacing below headings */
 }
 
+/* Body Text */
 body {
-  font-family: var(--font-secondary);
+  font-family: 'Open Sans', sans-serif; /* Updated secondary font */
+  color: #666; /* Updated body text color */
+  background-color: #f8f8f8; /* Updated background color */
+  line-height: 1.6; /* Improved line-height for better readability */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+/* Links */
+a {
+  color: #007bff; /* Updated link color */
+  text-decoration: underline; /* Add underline to links */
+}
+
+a:hover {
+  color: #0056b3; /* Updated link hover color */
+}
+
+/* Container */
+.container {
+  max-width: 1200px; /* Set max-width for content container */
+  margin: 0 auto; /* Center content container */
+  padding: 0 20px; /* Add horizontal padding to content container */
 }
